@@ -1,0 +1,119 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(225deg, #ceff7f, #9dd8ff, #b891ff);
+    display: flex;
+    font-family:'Tahoma', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+/* NEEDS WORK TO OVERFLOW WITH SCREENS
+
+.wrapper{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    color: #161616;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 590px;
+    padding: 20px 35px;
+} */
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.10);
+    color: #b891ff;
+    font-size: 40px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.history-screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.10);
+    color: #b891ff;
+    font-size: 16px;
+    overflow: auto;
+    padding: 5px 25px;
+    text-align: right;
+    width: 326px;
+    margin: 18px 0px
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.10);
+    color: #b891ff;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child{
+    color: #fff;
+    background: #b891ff;
+}
+
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.30);
+}
+
+.calc-button:active{
+    background-color: #9dd8ff;
+}
+
+.calc-button:last-child:active{
+    background-color: #9dd8ff;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 73%;
+}
